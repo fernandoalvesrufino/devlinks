@@ -5,10 +5,12 @@
 }
 
 body {
-  background-image: url(./assets/bg-mobile-dark-mode.jpg);
+  /* background-image: url(./assets/bg-mobile-dark-mode.jpg); */
+  background-image: url("https://wallpaperaccess.com/full/2109.jpg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }
 
 body * {
@@ -29,6 +31,11 @@ body * {
 
 #profile img {
   width: 7rem;
+  transition: all 0.5s;
+}
+
+#profile img:hover {
+  transform: scale(1.1);
 }
 
 #profile p {
@@ -62,11 +69,12 @@ ul li a {
 
   text-decoration: none;
   font-weight: 500;
-  transition: background 0.2s;
+  transition: all 0.5s;
 }
 
 /* pseudo-selector */
 ul li a:hover {
   background: rgba(255, 255, 255, 0.05);
-  border: 1.5px solid white;
+  border: 1px solid white;
+  transform: scale(1.05);
 }
