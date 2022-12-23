@@ -1,0 +1,11 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./assets/bg-mobile-dark-mode.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+}
