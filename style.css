@@ -13,7 +13,14 @@ body {
 
 #container {
   width: 22.5rem;
-  height: 44.5rem;
   border: 1px red solid;
   margin: auto;
+}
+
+#profile {
+  text-align: center;  
+}
+
+#profile img {
+  width: 7rem;
 }
