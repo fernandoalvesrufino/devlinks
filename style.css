@@ -8,4 +8,12 @@ body {
   background-image: url(./assets/bg-mobile-dark-mode.jpg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
+}
+
+#container {
+  width: 22.5rem;
+  height: 44.5rem;
+  border: 1px red solid;
+  margin: auto;
 }
