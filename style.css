@@ -101,3 +101,9 @@ ul li a:hover {
 #social-links a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
+
+footer {
+  padding: 1.5rem 0;
+  text-align: center;
+  font-size: 0.8rem;
+}
