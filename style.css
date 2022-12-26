@@ -76,9 +76,10 @@ ul li a {
 
 /* pseudo-selector */
 ul li a:hover {
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid white;
+  background: rgba(3, 0, 0, 0.308);
+  border: 1px solid #FF4D00;
   transform: scale(1.05);
+  color: #FF4D00;
 }
 
 #social-links {
