@@ -4,9 +4,19 @@
   box-sizing: border-box;
 }
 
+:root {
+  --text-color: white;
+  --bg-url: url("https://wallpaperaccess.com/full/2109.jpg");
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url("https://wallpaperaccess.com/full/686998.jpg");
+}
+
 body {
   /* background-image: url(./assets/bg-mobile-dark-mode.jpg); */
-  background-image: url("https://wallpaperaccess.com/full/2109.jpg");
+  background-image: var(--bg-url);
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
@@ -15,7 +25,7 @@ body {
 
 body * {
   font-family: 'Inter', sans-serif;
-  color: #FFFFFF;
+  color: var(--text-color);
 }
 
 #container {
@@ -77,9 +87,8 @@ ul li a {
 /* pseudo-selector */
 ul li a:hover {
   background: rgba(3, 0, 0, 0.308);
-  border: 1px solid #FF4D00;
+  border: 1px solid var(--text-color);
   transform: scale(1.05);
-  color: #FF4D00;
 }
 
 #social-links {
@@ -96,11 +105,12 @@ ul li a:hover {
   justify-content: center;
   padding: 0.7rem;
   border-radius: 50%;
-  transition: all 0.2s;
+  transition: all 0.35s;
 }
 
 #social-links a:hover {
   background: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
 }
 
 footer {
