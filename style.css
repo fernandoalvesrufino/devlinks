@@ -87,11 +87,17 @@ body * {
   background-image: var(--switch-bg-url);
   background-repeat: no-repeat;
   background-position: center ;
+  transition: all 0.3s;
+
+  animation: slide-back 0.4s;
+}
+
+#switch button:hover {
+  outline: 0.5rem solid var(--highlight-color);
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
 }
 
 #switch span {
@@ -168,4 +174,21 @@ footer {
   padding: 1.5rem 0;
   text-align: center;
   font-size: 0.8rem;
+}
+
+/* animation */
+@keyframes slide-in {
+  from {
+    left: 0;
+  } to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-back {
+  from {
+    left: 50%;
+  } to {
+    left: 0;
+  }
 }
