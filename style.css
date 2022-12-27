@@ -66,7 +66,7 @@ body * {
 }
 
 /* switch */
-#switch{
+#switch {
   position: relative;
   width: 4rem;
   margin: 0.25rem auto;
@@ -78,6 +78,7 @@ body * {
   transform: translateY(-50%);
   top: 50%;
   left: 0;
+  cursor: pointer;
   
   width: 2rem;
   height: 2rem;
@@ -88,7 +89,7 @@ body * {
   background-repeat: no-repeat;
   background-position: center ;
   transition: all 0.3s;
-
+  
   animation: slide-back 0.4s;
 }
 
@@ -174,6 +175,7 @@ footer {
   padding: 1.5rem 0;
   text-align: center;
   font-size: 0.8rem;
+  color: white;
 }
 
 /* animation */
