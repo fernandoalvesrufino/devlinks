@@ -6,22 +6,24 @@
 
 :root {
   --text-color: white;
-  --bg-url: url("./assets/bg-desk-dark-mode.png");
+  --bg-url: url("./assets/bg-mobile-dark-mode.png");
   --stroke-color: rgba(255, 255, 255, 0.5);
   --surface-color: rgba(255, 255, 255, 0.1);
   --surface-color-hover: rgba(3, 0, 0, 0.308);
   --highlight-color: rgba(255, 255, 255, 0.2);
   --switch-bg-url: url(./assets/moon-star.svg);
+  --footer-font-weight: normal;
 }
 
 .light {
   --text-color: black;
-  --bg-url: url("./assets/bg-desk-light-mode.png");
+  --bg-url: url("./assets/bg-mobile-light-mode.png");
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.1);
   --surface-color-hover: rgba(3, 0, 0, 0.308);
   --highlight-color: rgba(0, 0, 0, 0.25);
   --switch-bg-url: url(./assets/sun.svg);
+  --footer-font-weight: bold;
 }
 
 body {
@@ -30,7 +32,8 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
-  height: 100%;
+  height: 100vh;
+  width: 100vw;
 }
 
 body * {
@@ -175,7 +178,8 @@ footer {
   padding: 1.5rem 0;
   text-align: center;
   font-size: 0.8rem;
-  color: white;
+  color: var(--text-color);
+  font-weight: var(--footer-font-weight);
 }
 
 /* animation */
@@ -192,5 +196,16 @@ footer {
     left: 50%;
   } to {
     left: 0;
+  }
+}
+
+/* media queries */
+@media (min-width: 500px) {
+  :root {
+    --bg-url: url("./assets/bg-desk-dark-mode.png");
+  }
+  
+  .light {
+    --bg-url: url("./assets/bg-desk-light-mode.png");
   }
 }
