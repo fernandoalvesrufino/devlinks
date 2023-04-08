@@ -54,4 +54,4 @@ Esse projeto está sob a licença MIT.
 
 by Fernando Rufino
 
-> PS: Projeto criado pela Rocketseat 
+`Projeto criado pela Rocketseat`
